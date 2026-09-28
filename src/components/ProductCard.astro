@@ -1,0 +1,15 @@
+---
+interface Props {
+    name: string;
+    description: string;
+    price: number;
+}
+
+const { name, description, price } = Astro.props;
+---
+
+<article>
+    <h3>{name}</h3>
+    <p>{description}</p>
+    <p>{price.toFixed(2)} €</p>
+</article>
